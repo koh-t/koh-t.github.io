@@ -46,10 +46,11 @@ function drawLineChart(data) {
       },
       scales: {
         yAxes: [{
+	  //type: 'logarithmic',
           ticks: {
-            suggestedMax: 40,
-            suggestedMin: 0,
-            stepSize: 10,
+            //suggestedMax: 40,
+            //suggestedMin: 0,
+            //stepSize: 10,
             callback: function(value, index, values){
               return  value +  '度'
             }
