@@ -44,9 +44,9 @@ function drawLineChart(data) {
         display: true,
         text: '気温（8月1日~8月7日）'
       },
-      scales: {
+	scales: {
         yAxes: [{
-	  //type: 'logarithmic',
+	  type: 'logarithmic',
           ticks: {
             //suggestedMax: 40,
             //suggestedMin: 0,
