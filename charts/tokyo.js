@@ -69,7 +69,6 @@ function drawLineChart(data) {
 function main() {
   // 1) ajaxでCSVファイルをロード
   var req = new XMLHttpRequest();
-  //var filePath = './csv/COVID-192020-04-07-073007/東京都.csv';
   var filePath = 'https://koh-t.github.io/charts/csv/COVID-192020-04-07-073007/東京都.csv';
   req.open("GET", filePath, true);
   req.onload = function() {
