@@ -68,11 +68,12 @@ def check_signate():
 
 if __name__ == '__main__':
     df, savedir = load_data()
-    create_csv(df, savedir)
+    # create_csv(df, savedir)
 
     prefs_count = df['居住都道府県'].value_counts()
     prefs_count = prefs_count.drop('不明')
-    prefs_count = prefs_count[prefs_count > 100]
+    # prefs_count = prefs_count[prefs_count > 100]
+    prefs_count = prefs_count[['東京都', '大阪府']]
 
     for (i, idx) in enumerate(prefs_count.index):
         fname = savedir + idx + '.csv'
