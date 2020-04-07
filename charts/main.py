@@ -39,8 +39,10 @@ def create_csv(df,savedir):
         pdf_cumsum = pdf.cumsum()
         pdf = pd.concat([pdf_cumsum, pdf_cumsum, pdf_perweek, pdf_perweek], axis=1)
         pdf.columns = ['cumsum', 'log10_cumsum', 'rolling', 'log10_rolling']
-        pdf['log10_cumsum'] = np.log10(pdf['log10_cumsum'])
-        pdf['log10_rolling'] = np.log10(pdf['log10_rolling'])
+
+        pdf['log10_cumsum'] = np.round(np.log10(pdf['log10_cumsum']), 3)
+        pdf['log10_rolling'] = np.round(np.log10(pdf['log10_rolling']), 3)
+
         pdf.to_csv(savedir+idx+'.csv', header=False)
 
         plt.close()
@@ -67,3 +69,18 @@ def check_signate():
 if __name__ == '__main__':
     df, savedir = load_data()
     create_csv(df, savedir)
+
+    prefs_count = df['居住都道府県'].value_counts()
+    prefs_count = prefs_count.drop('不明')
+    prefs_count = prefs_count[prefs_count > 100]
+
+    for (i, idx) in enumerate(prefs_count.index):
+        fname = savedir + idx + '.csv'
+        dfi = pd.read_csv(fname)
+        if i == 0:
+            topdf = dfi
+        else:
+            topdf = pd.concat([topdf, dfi], axis=1)
+        topdf.to_csv(savedir + 'merge.csv')
+
+    print(0)
