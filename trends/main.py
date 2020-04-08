@@ -110,7 +110,7 @@ if __name__ == '__main__':
     l = [i for i, line in enumerate(html) if '新型コロナウイルス(COVID-19)の感染数' in line][0]
     today = savedir.split('-')
     today = today[2] + '年' + today[3] + '月' + today[4][:-1] + '日'
-    html[l] = html[l][:-4] + today + html[l][-4:]
+    html[l] = html[l][:-6] + today + html[l][-6:]
 
     # insert data
     l = [i for i, line in enumerate(html) if 'datasets' in line][0]
