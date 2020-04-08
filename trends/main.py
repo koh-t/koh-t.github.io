@@ -96,8 +96,8 @@ def dfi2newlines(dfi, rgba):
 if __name__ == '__main__':
     get_jag()
     df, savedir = load_data()
-    if not os.path.exists(savedir):
-        create_csv(df, savedir)
+    # if not os.path.exists(savedir):
+    create_csv(df, savedir)
 
     prefs_count = df['居住都道府県'].value_counts()
     prefs_count = prefs_count.drop('不明')
