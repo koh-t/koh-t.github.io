@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+　<title>Covid Trends in Japan</title> 
+</head>
+<body>
+  <h2>都道府県版 Covid Trends (参考: https://aatishb.com/covidtrends)</h2>
+  <canvas id="myScatterChart"></canvas>
+  <!-- CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+
+  <script>
+  // グラフ作成
+  var ctx = document.getElementById("myScatterChart");
+
+  var myScatterChart = new Chart(ctx, {
+    type: 'scatter', 
+    data: { 
+      datasets: [
+    },
+    options:{
+      title: {
+        display: true,
+          text: '新型コロナウイルス(COVID-19)の感染数 ()',
+	  fontSize: 25
+      },
+      scales: {
+        xAxes: [{        
+          scaleLabel: {             
+            display: true,          
+            labelString: '総感染者数', 
+	    fontSize: 20
+          },
+          ticks: {
+            callback: function(value, index, values){
+              return  '10^' + value +  ' 人'
+            }
+          }
+        }],
+        yAxes: [{        
+          scaleLabel: {             
+            display: true,          
+            labelString: '週毎の総合感染者数' ,
+            fontSize: 20
+          },
+          ticks: {
+            callback: function(value, index, values){
+              return  '10^' + value +  ' 人'
+            }
+          }
+        }]
+      }
+    }
+  });
+</script>
+<h4> この図は両対数グラフです。</h4>  
+<h4>データ提供元: 日本国内における新型コロナウイルス感染症の患者数マップ (https://gis.jag-japan.com/covid19jp)</h4>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c5aa05f3-0e80-4454-bc94-cacf1641ac0e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../charts/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../charts/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/.idea/charts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../charts/.idea/charts.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../charts/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/client_secret.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/credentials.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-072956.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/merge.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/アイルランド.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/アイルランド.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/アメリカ.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/アメリカ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/イギリス.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/イギリス.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/インドネシア.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/インドネシア.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/カナダ.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/カナダ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/ジンバブエ共和国.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/ジンバブエ共和国.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/スペイン.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/スペイン.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/フィリピン.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/フィリピン.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/フランス.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/フランス.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/三重県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/三重県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/不明.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/不明.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/中華人民共和国.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/中華人民共和国.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/京都府.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/京都府.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/佐賀県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/佐賀県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/兵庫県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/兵庫県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/北海道.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/北海道.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/千葉県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/千葉県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/南アフリカ共和国.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/南アフリカ共和国.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/和歌山県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/和歌山県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/埼玉県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/埼玉県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/大分県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/大分県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/大阪府.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/大阪府.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/奈良県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/奈良県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/宮城県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/宮城県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/宮崎県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/宮崎県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/富山県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/富山県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/山口県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/山口県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/山形県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/山形県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/山梨県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/山梨県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/岐阜県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/岐阜県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/岡山県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/岡山県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/広島県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/広島県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/徳島県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/徳島県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/愛媛県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/愛媛県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/愛知県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/愛知県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/新潟県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/新潟県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/東京都.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/東京都.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/栃木県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/栃木県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/沖縄県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/沖縄県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/滋賀県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/滋賀県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/熊本県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/熊本県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/石川県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/石川県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/神奈川県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/神奈川県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/福井県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/福井県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/福岡県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/福岡県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/福島県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/福島県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/秋田県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/秋田県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/群馬県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/群馬県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/茨城県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/茨城県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/長崎県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/長崎県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/長野県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/長野県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/青森県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/青森県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/静岡県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/静岡県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/香川県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/香川県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/高知県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/高知県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/鹿児島県.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv/COVID-192020-04-07-073007/鹿児島県.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv2bar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv2bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv2line.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/csv2line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/gsheet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/index.htmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/line.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/mychart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/scatter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/storage.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/tokyo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/tokyo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/trends.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charts/trends.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1aG7xHAJhGp4VFcMlkVFUyUH8jp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="trends" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5aa05f3-0e80-4454-bc94-cacf1641ac0e" name="Default Changelist" comment="" />
+      <created>1586350321134</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586350321134</updated>
+      <workItem from="1586350323654" duration="457000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="187" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586350447149">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="187" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350447149" />
+    <state x="510" y="223" key="FileChooserDialogImpl" timestamp="1586350372440">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="510" y="223" key="FileChooserDialogImpl/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350372440" />
+    <state width="1356" height="266" key="GridCell.Tab.0.bottom" timestamp="1586350952768">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1356" height="266" key="GridCell.Tab.0.bottom/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350952768" />
+    <state width="1356" height="266" key="GridCell.Tab.0.center" timestamp="1586350952766">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1356" height="266" key="GridCell.Tab.0.center/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350952766" />
+    <state width="1356" height="266" key="GridCell.Tab.0.left" timestamp="1586350952765">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1356" height="266" key="GridCell.Tab.0.left/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350952765" />
+    <state width="1356" height="266" key="GridCell.Tab.0.right" timestamp="1586350952767">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1356" height="266" key="GridCell.Tab.0.right/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350952767" />
+    <state width="1356" height="266" key="GridCell.Tab.1.bottom" timestamp="1586350952693">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1356" height="266" key="GridCell.Tab.1.bottom/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350952693" />
+    <state width="1356" height="266" key="GridCell.Tab.1.center" timestamp="1586350952692">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1356" height="266" key="GridCell.Tab.1.center/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350952692" />
+    <state width="1356" height="266" key="GridCell.Tab.1.left" timestamp="1586350952692">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1356" height="266" key="GridCell.Tab.1.left/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350952692" />
+    <state width="1356" height="266" key="GridCell.Tab.1.right" timestamp="1586350952692">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1356" height="266" key="GridCell.Tab.1.right/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350952692" />
+    <state x="224" y="100" key="SettingsEditor" timestamp="1586350459623">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="224" y="100" key="SettingsEditor/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350459623" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/trends$main.coverage" NAME="main Coverage Results" MODIFIED="1586350952674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
