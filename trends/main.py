@@ -13,8 +13,9 @@ rcParams['font.family'] = 'Hiragino Sans'
 def get_jag():
     timenow = datetime.today().strftime('%Y-%m-%d')
     fname = './csv/COVID-19-' + timenow + '.csv'
-    df = pd.read_csv('https://dl.dropboxusercontent.com/s/6mztoeb6xf78g5w/COVID-19.csv')
-    df.to_csv(fname)
+    if not os.path.exists(fname):
+        df = pd.read_csv('https://dl.dropboxusercontent.com/s/6mztoeb6xf78g5w/COVID-19.csv')
+        df.to_csv(fname)
 
 def load_data():
     files = glob.glob('./csv/*.csv')
@@ -95,7 +96,8 @@ def dfi2newlines(dfi, rgba):
 if __name__ == '__main__':
     get_jag()
     df, savedir = load_data()
-    create_csv(df, savedir)
+    if not os.path.exists(savedir):
+        create_csv(df, savedir)
 
     prefs_count = df['居住都道府県'].value_counts()
     prefs_count = prefs_count.drop('不明')
@@ -107,7 +109,7 @@ if __name__ == '__main__':
         html = f.readlines()
 
     # insert days
-    l = [i for i, line in enumerate(html) if '新型コロナウイルス(COVID-19)の感染数' in line][0]
+    l = [i for i, line in enumerate(html) if '新型コロナウイルス(COVID-19)の感染者数' in line][0]
     today = savedir.split('-')
     today = today[2] + '年' + today[3] + '月' + today[4][:-1] + '日'
     html[l] = html[l][:-6] + today + html[l][-6:]
