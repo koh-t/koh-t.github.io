@@ -68,7 +68,7 @@ def check_signate():
     cpref = df.pref.value_counts()
     print(cpref)
 
-def dfi2newlines(dfi, rgba, type = 'trend'):
+def dfi2newlines(dfi, rgba, idx, type = 'trend'):
     rgba[3] = rgba[3] * 0.2
     rgba2 = rgba.copy()
     rgba2[3] = rgba2[3] * 0.1
@@ -113,7 +113,7 @@ def generate_scatter(prefs_count, savedir):
         fname = savedir + idx + '.csv'
         dfi = pd.read_csv(fname)
         rgba = np.array(plt.cm.tab10(i))
-        newlines = dfi2newlines(dfi, rgba)
+        newlines = dfi2newlines(dfi, rgba, idx)
         for (i, newline) in enumerate(newlines):
             html.insert(l + i + 1, newline)
         l += len(newlines)
@@ -137,9 +137,10 @@ if __name__ == '__main__':
     prefs_count = prefs_count.drop('不明')
     prefs_count = prefs_count[prefs_count > 100]
     # prefs_count = prefs_count[['東京都', '大阪府', '京都府']]
+    generate_scatter(prefs_count, savedir)
 
     thresh = 10
-    template = './scatter_template.html'
+    template = './scatter_day_template.html'
     with open(template) as f:
         html = f.readlines()
 
@@ -156,7 +157,7 @@ if __name__ == '__main__':
         dfi = pd.read_csv(fname)
         dfi = dfi[dfi['cumsum'] > thresh]
         rgba = np.array(plt.cm.tab10(i))
-        newlines = dfi2newlines(dfi, rgba, 'day')
+        newlines = dfi2newlines(dfi, rgba, idx, 'day')
         for (i, newline) in enumerate(newlines):
             html.insert(l + i + 1, newline)
         l += len(newlines)
