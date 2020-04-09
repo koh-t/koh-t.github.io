@@ -174,5 +174,9 @@ if __name__ == '__main__':
     with open(savename, 'w') as f:
         f.writelines(html)
 
+    savename = './scatter_day.html'
+    with open(savename, 'w') as f:
+        f.writelines(html)
+
 
     print(0)
