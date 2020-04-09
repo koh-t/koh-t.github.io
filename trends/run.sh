@@ -1,4 +1,4 @@
-!#!/bin/bash
+#!/bin/bash
 echo "update covid trends!"
 cd /Users/koh/Dropbox/Proj-web/koh-t.github.io/trends
 
