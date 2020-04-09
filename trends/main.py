@@ -68,7 +68,7 @@ def check_signate():
     cpref = df.pref.value_counts()
     print(cpref)
 
-def dfi2newlines(dfi, rgba):
+def dfi2newlines(dfi, rgba, type = 'trend'):
     rgba[3] = rgba[3] * 0.2
     rgba2 = rgba.copy()
     rgba2[3] = rgba2[3] * 0.1
@@ -76,8 +76,11 @@ def dfi2newlines(dfi, rgba):
     rgba2 = tuple((rgba2 * 256).astype(int).tolist())
 
     data = ''
-    for index, row in dfi.iterrows():
-        x = np.round(row.log10_cumsum, 3)
+    for (j, (index, row)) in enumerate(dfi.iterrows()):
+        if type == 'trend':
+            x = np.round(row.log10_cumsum, 3)
+        elif type == 'day':
+            x = j
         y = np.round(row.log10_rolling, 3)
         data = data + '{x:' + str(x) + ', y:' + str(y) + '}, '
     data = data[:-2]
@@ -93,17 +96,7 @@ def dfi2newlines(dfi, rgba):
     newlines.append('        },\n')
     return newlines
 
-if __name__ == '__main__':
-    get_jag()
-    df, savedir = load_data()
-    # if not os.path.exists(savedir):
-    create_csv(df, savedir)
-
-    prefs_count = df['居住都道府県'].value_counts()
-    prefs_count = prefs_count.drop('不明')
-    prefs_count = prefs_count[prefs_count > 100]
-    # prefs_count = prefs_count[['東京都', '大阪府', '京都府']]
-
+def generate_scatter(prefs_count, savedir):
     template = './scatter_template.html'
     with open(template) as f:
         html = f.readlines()
@@ -120,12 +113,11 @@ if __name__ == '__main__':
         fname = savedir + idx + '.csv'
         dfi = pd.read_csv(fname)
         rgba = np.array(plt.cm.tab10(i))
-        rgba2 = rgba
         newlines = dfi2newlines(dfi, rgba)
         for (i, newline) in enumerate(newlines):
             html.insert(l + i + 1, newline)
         l += len(newlines)
-    html.insert(l+1, '      ]\n')
+    html.insert(l + 1, '      ]\n')
 
     savename = 'index.html'
     with open(savename, 'w') as f:
@@ -134,4 +126,50 @@ if __name__ == '__main__':
     savename = savedir + '/scatter.html'
     with open(savename, 'w') as f:
         f.writelines(html)
+
+if __name__ == '__main__':
+    get_jag()
+    df, savedir = load_data()
+    # if not os.path.exists(savedir):
+    # create_csv(df, savedir)
+
+    prefs_count = df['居住都道府県'].value_counts()
+    prefs_count = prefs_count.drop('不明')
+    prefs_count = prefs_count[prefs_count > 100]
+    # prefs_count = prefs_count[['東京都', '大阪府', '京都府']]
+
+    thresh = 10
+    template = './scatter_template.html'
+    with open(template) as f:
+        html = f.readlines()
+
+    # insert days
+    l = [i for i, line in enumerate(html) if '新型コロナウイルス(COVID-19)の感染者数' in line][0]
+    today = savedir.split('-')
+    today = today[2] + '年' + today[3] + '月' + today[4][:-1] + '日'
+    html[l] = html[l][:-6] + today + html[l][-6:]
+
+    # insert data
+    l = [i for i, line in enumerate(html) if 'datasets' in line][0]
+    for (i, idx) in enumerate(prefs_count.index):
+        fname = savedir + idx + '.csv'
+        dfi = pd.read_csv(fname)
+        dfi = dfi[dfi['cumsum'] > thresh]
+        rgba = np.array(plt.cm.tab10(i))
+        newlines = dfi2newlines(dfi, rgba, 'day')
+        for (i, newline) in enumerate(newlines):
+            html.insert(l + i + 1, newline)
+        l += len(newlines)
+
+    html.insert(l + 1, '      ]\n')
+
+    savename = 'index_day.html'
+    with open(savename, 'w') as f:
+        f.writelines(html)
+
+    savename = savedir + '/scatter_day.html'
+    with open(savename, 'w') as f:
+        f.writelines(html)
+
+
     print(0)
