@@ -47,8 +47,8 @@
 	    fontSize: 20
           },
           ticks: {
-            callback: function(value, index, values){
-              return  '10^' + value +  ' 人'
+              callback: function(value, index, values){
+		  return  Math.pow(10,value) +  ' 人'
             }
           }
         }],
@@ -59,8 +59,8 @@
             fontSize: 20
           },
           ticks: {
-            callback: function(value, index, values){
-              return  '10^' + value +  ' 人'
+              callback: function(value, index, values){
+		  return  Math.pow(10,value) +  ' 人'
             }
           }
         }]
