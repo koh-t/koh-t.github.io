@@ -177,6 +177,6 @@ if __name__ == '__main__':
     # prefs_count = prefs_count[['東京都', '大阪府', '京都府']]
 
     generate_scatter(prefs_count, savedir)
-    generate_scatter_day(prefs_count, savedir)
+    generate_scatter_day(prefs_count, savedir, 10)
 
     print(0)
