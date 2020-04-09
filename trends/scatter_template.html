@@ -48,7 +48,7 @@
           },
           ticks: {
               callback: function(value, index, values){
-		  return  Math.pow(10,value) +  ' 人'
+		  return  Math.round(Math.pow(10,value)) +  ' 人'
             }
           }
         }],
@@ -60,7 +60,7 @@
           },
           ticks: {
               callback: function(value, index, values){
-		  return  Math.pow(10,value) +  ' 人'
+		  return  Math.round(Math.pow(10,value)) +  ' 人'
             }
           }
         }]
