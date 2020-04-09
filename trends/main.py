@@ -33,7 +33,7 @@ def _create_csv(pdf, idx, savedir):
     pdf = pd.to_datetime(pdf['確定日YYYYMMDD'])
     pdf = pdf.value_counts().sort_index()
 
-    pdf_perweek = pdf.rolling('7d', min_periods=1).sum()
+    pdf_perweek = pdf.rolling('7d', min_periods=1).mean()
     pdf_cumsum = pdf.cumsum()
     pdf = pd.concat([pdf_cumsum, pdf_cumsum, pdf_perweek, pdf_perweek], axis=1)
     pdf.columns = ['cumsum', 'log10_cumsum', 'rolling', 'log10_rolling']
