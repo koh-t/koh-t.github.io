@@ -164,7 +164,7 @@ if __name__ == '__main__':
 
     html.insert(l + 1, '      ]\n')
 
-    savename = 'index_day.html'
+    savename = 'scatter_day.html'
     with open(savename, 'w') as f:
         f.writelines(html)
 
