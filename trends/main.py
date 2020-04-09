@@ -132,20 +132,7 @@ def generate_scatter(prefs_count, savedir):
     with open(savename, 'w') as f:
         f.writelines(html)
 
-if __name__ == '__main__':
-    get_jag()
-    df, savedir = load_data()
-    if not os.path.exists(savedir):
-        create_csv(df, savedir)
-
-    prefs_count = df['居住都道府県'].value_counts()
-    prefs_count = prefs_count.drop('不明')
-    prefs_count = prefs_count[prefs_count > 100]
-    # prefs_count = prefs_count[['東京都', '大阪府', '京都府']]
-
-    generate_scatter(prefs_count, savedir)
-
-    thresh = 10
+def generate_scatter_day(prefs_count, savedir, thresh = 1-):
     template = './scatter_day_template.html'
     with open(template) as f:
         html = f.readlines()
@@ -177,6 +164,23 @@ if __name__ == '__main__':
     savename = './scatter_day.html'
     with open(savename, 'w') as f:
         f.writelines(html)
+
+if __name__ == '__main__':
+    get_jag()
+    df, savedir = load_data()
+    if not os.path.exists(savedir):
+        create_csv(df, savedir)
+
+    prefs_count = df['居住都道府県'].value_counts()
+    prefs_count = prefs_count.drop('不明')
+    prefs_count = prefs_count[prefs_count > 100]
+    # prefs_count = prefs_count[['東京都', '大阪府', '京都府']]
+
+    generate_scatter(prefs_count, savedir)
+    generate_scatte_dayr(prefs_count, savedir)
+
+    print(0)
+
 
 
     print(0)
