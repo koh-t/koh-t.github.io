@@ -132,7 +132,7 @@ def generate_scatter(prefs_count, savedir):
     with open(savename, 'w') as f:
         f.writelines(html)
 
-def generate_scatter_day(prefs_count, savedir, thresh = 1-):
+def generate_scatter_day(prefs_count, savedir, thresh = 10):
     template = './scatter_day_template.html'
     with open(template) as f:
         html = f.readlines()
