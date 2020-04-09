@@ -29,31 +29,36 @@ def load_data():
     df = pd.read_csv(file)
     return df, savedir
 
+def _create_csv(pdf, idx, savedir):
+    pdf = pd.to_datetime(pdf['確定日YYYYMMDD'])
+    pdf = pdf.value_counts().sort_index()
+
+    pdf_perweek = pdf.rolling('7d', min_periods=1).sum()
+    pdf_cumsum = pdf.cumsum()
+    pdf = pd.concat([pdf_cumsum, pdf_cumsum, pdf_perweek, pdf_perweek], axis=1)
+    pdf.columns = ['cumsum', 'log10_cumsum', 'rolling', 'log10_rolling']
+
+    pdf['log10_cumsum'] = np.round(np.log10(pdf['log10_cumsum']), 3)
+    pdf['log10_rolling'] = np.round(np.log10(pdf['log10_rolling']), 3)
+
+    pdf.to_csv(savedir + idx + '.csv')  # , header=False)
+
+    plt.close()
+    pdf.plot(x='log10_cumsum', y='log10_rolling', grid=True)
+    plt.title(idx)
+    plt.xlabel('総症例数 (対数)')
+    plt.ylabel('前週の新規症例数 (対数)')
+    # plt.show()
+    plt.savefig(savedir + idx + '.png')
+
 def create_csv(df,savedir):
     prefs_count = df['居住都道府県'].value_counts()
     for idx in prefs_count.index:
-        # idx = prefs_count.index[i]
         pdf = df[df['居住都道府県'] == idx]
-        pdf = pd.to_datetime(pdf['確定日YYYYMMDD'])
-        pdf = pdf.value_counts().sort_index()
+        _create_csv(pdf, idx, savedir)
 
-        pdf_perweek = pdf.rolling('7d', min_periods=1).sum()
-        pdf_cumsum = pdf.cumsum()
-        pdf = pd.concat([pdf_cumsum, pdf_cumsum, pdf_perweek, pdf_perweek], axis=1)
-        pdf.columns = ['cumsum', 'log10_cumsum', 'rolling', 'log10_rolling']
-
-        pdf['log10_cumsum'] = np.round(np.log10(pdf['log10_cumsum']), 3)
-        pdf['log10_rolling'] = np.round(np.log10(pdf['log10_rolling']), 3)
-
-        pdf.to_csv(savedir+idx+'.csv') # , header=False)
-
-        plt.close()
-        pdf.plot(x='log10_cumsum', y='log10_rolling', grid=True)
-        plt.title(idx)
-        plt.xlabel('総症例数 (対数)')
-        plt.ylabel('前週の新規症例数 (対数)')
-        # plt.show()
-        plt.savefig(savedir+idx+'.png')
+    jdf = df[df.居住都道府県コード.notnull()]
+    _create_csv(jdf, '全国', savedir)
 
 
 def check_signate():
@@ -130,13 +135,14 @@ def generate_scatter(prefs_count, savedir):
 if __name__ == '__main__':
     get_jag()
     df, savedir = load_data()
-    # if not os.path.exists(savedir):
-    # create_csv(df, savedir)
+    if not os.path.exists(savedir):
+        create_csv(df, savedir)
 
     prefs_count = df['居住都道府県'].value_counts()
     prefs_count = prefs_count.drop('不明')
     prefs_count = prefs_count[prefs_count > 100]
     # prefs_count = prefs_count[['東京都', '大阪府', '京都府']]
+
     generate_scatter(prefs_count, savedir)
 
     thresh = 10
