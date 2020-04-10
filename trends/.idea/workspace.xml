@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5aa05f3-0e80-4454-bc94-cacf1641ac0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +66,7 @@
       <updated>1586350321134</updated>
       <workItem from="1586350323654" duration="7616000" />
       <workItem from="1586398612715" duration="8731000" />
+      <workItem from="1586484023634" duration="591000" />
     </task>
     <servers />
   </component>
@@ -134,6 +135,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="224" y="100" key="SettingsEditor/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350459623" />
+    <state x="776" y="813" key="com.intellij.ide.util.TipDialog" timestamp="1586500210485">
+      <screen x="0" y="23" width="3360" height="1867" />
+    </state>
+    <state x="776" y="813" key="com.intellij.ide.util.TipDialog/0.23.3360.1867/-1440.-647.1440.2537@0.23.3360.1867" timestamp="1586500210485" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
