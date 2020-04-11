@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5aa05f3-0e80-4454-bc94-cacf1641ac0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
-    </list>
+    <list default="true" id="c5aa05f3-0e80-4454-bc94-cacf1641ac0e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +65,7 @@
       <workItem from="1586350323654" duration="7616000" />
       <workItem from="1586398612715" duration="8731000" />
       <workItem from="1586484023634" duration="591000" />
+      <workItem from="1586569381057" duration="595000" />
     </task>
     <servers />
   </component>
