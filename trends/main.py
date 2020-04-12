@@ -121,9 +121,9 @@ if __name__ == '__main__':
 
     T = 10
     N0 = 1
-    t = np.arange(T)
+    t = np.arange(1, T)
     Td = 70/r*t
-    Nt = N0 * np.pow(2, t/Td)
+    Nt = N0 * np.power(2, t/Td)
 
 
     generate_scatter(prefs_count, savedir)
