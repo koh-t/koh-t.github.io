@@ -128,11 +128,11 @@ def generate_pref_scatter(prefs_count, savedir):
         l += len(newlines)
     html.insert(l + 1, '      ]\n')
 
-    savename = 'index.html'
+    savename = 'scatter_pref.html'
     with open(savename, 'w') as f:
         f.writelines(html)
 
-    savename = savedir + '/scatter.html'
+    savename = savedir + '/scatter_pref.html'
     with open(savename, 'w') as f:
         f.writelines(html)
 
@@ -214,7 +214,8 @@ if __name__ == '__main__':
     prefs_count = prefs_count[prefs_count > 100]
     # prefs_count = prefs_count[['東京都', '大阪府', '京都府']]
 
+    generate_pref_scatter(prefs_count, savedir)
+
     generate_scatter(prefs_count, savedir)
     generate_scatter_day(prefs_count, savedir, 10)
-
     print(0)
