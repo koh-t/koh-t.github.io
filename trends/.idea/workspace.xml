@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5aa05f3-0e80-4454-bc94-cacf1641ac0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/scatter_day.html" beforeDir="false" afterPath="$PROJECT_DIR$/scatter_day.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <workItem from="1586398612715" duration="8731000" />
       <workItem from="1586484023634" duration="591000" />
       <workItem from="1586569381057" duration="595000" />
-      <workItem from="1586664481816" duration="452000" />
+      <workItem from="1586664481816" duration="1132000" />
     </task>
     <servers />
   </component>
