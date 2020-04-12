@@ -62,6 +62,7 @@ def generate_scatter(prefs_count, savedir):
         for (i, newline) in enumerate(newlines):
             html.insert(l + i + 1, newline)
         l += len(newlines)
+
     html.insert(l + 1, '      ]\n')
 
     savename = 'index.html'
