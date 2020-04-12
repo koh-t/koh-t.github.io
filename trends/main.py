@@ -233,7 +233,7 @@ def generate_scatter_day_pref(prefs_count, savedir, prefid, thresh=10):
     for (i, idx) in enumerate(prefs):
         fname = savedir + idx + '.csv'
         dfi = pd.read_csv(fname)
-        dfi = dfi[dfi['cumsum'] > thresh]
+        # dfi = dfi[dfi['cumsum'] > thresh]
         if i == 0:
             rgba = np.array(plt.cm.tab20(0))
         else:
