@@ -121,7 +121,7 @@ def generate_pref_scatter(prefs_count, savedir, prefid):
     for (i, idx) in enumerate(prefs):
         fname = savedir + idx + '.csv'
         dfi = pd.read_csv(fname)
-        if i ==1:
+        if i == 0:
             rgba = np.array(plt.cm.tab20(0))
         else:
             rgba = np.array([1,1,1,1])*0.8
@@ -132,7 +132,7 @@ def generate_pref_scatter(prefs_count, savedir, prefid):
         l += len(newlines)
     html.insert(l + 1, '      ]\n')
 
-    savename = 'scatter_pref.html'
+    savename = 'scatter_' + + '.html'
     with open(savename, 'w') as f:
         f.writelines(html)
 
