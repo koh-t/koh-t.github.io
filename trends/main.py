@@ -120,7 +120,7 @@ def generate_pref_scatter(prefs_count, savedir):
         if i ==1:
             rgba = np.array(plt.cm.tab20(i))
         else:
-            rgba = np.array([1,1,1,1])*0.5
+            rgba = np.array([1,1,1,1])*0.8
 
         newlines = dfi2newlines(dfi, rgba, idx)
         for (i, newline) in enumerate(newlines):
