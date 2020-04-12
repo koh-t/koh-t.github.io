@@ -122,7 +122,7 @@ if __name__ == '__main__':
     T = 50
     N0 = 1
     t = np.arange(1, T)
-    Td = 70/r*t
+    Td = 70/r
     Nt = N0 * np.power(t/Td, 2)
 
 
