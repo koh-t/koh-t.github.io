@@ -118,7 +118,7 @@ def generate_pref_scatter(prefs_count, savedir):
         fname = savedir + idx + '.csv'
         dfi = pd.read_csv(fname)
         if i ==1:
-            rgba = np.array(plt.cm.tab20(i))
+            rgba = np.array(plt.cm.tab20(0))
         else:
             rgba = np.array([1,1,1,1])*0.8
 
