@@ -101,7 +101,7 @@ def dfi2newlines(dfi, rgba, idx, type = 'trend'):
     newlines.append('        },\n')
     return newlines
 
-def generate_pref_scatter(prefs_count, savedir):
+def generate_pref_scatter(prefs_count, savedir, prefid):
     template = './scatter_template.html'
     with open(template) as f:
         html = f.readlines()
@@ -113,8 +113,12 @@ def generate_pref_scatter(prefs_count, savedir):
     html[l] = html[l][:-6] + today + html[l][-6:]
 
     # insert data
+    prefs = list(prefs_count.index)
+    pref = prefs.pop(prefid)
+    prefs.insert(0, pref)
+
     l = [i for i, line in enumerate(html) if 'datasets' in line][0]
-    for (i, idx) in enumerate(prefs_count.index):
+    for (i, idx) in enumerate(prefs):
         fname = savedir + idx + '.csv'
         dfi = pd.read_csv(fname)
         if i ==1:
