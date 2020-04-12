@@ -101,6 +101,42 @@ def dfi2newlines(dfi, rgba, idx, type = 'trend'):
     newlines.append('        },\n')
     return newlines
 
+def generate_pref_scatter(prefs_count, savedir):
+    template = './scatter_template.html'
+    with open(template) as f:
+        html = f.readlines()
+
+    # insert days
+    l = [i for i, line in enumerate(html) if '新型コロナウイルス(COVID-19)の感染者数' in line][0]
+    today = savedir.split('-')
+    today = today[2] + '年' + today[3] + '月' + today[4][:-1] + '日'
+    html[l] = html[l][:-6] + today + html[l][-6:]
+
+    # insert data
+    l = [i for i, line in enumerate(html) if 'datasets' in line][0]
+    for (i, idx) in enumerate(prefs_count.index):
+        fname = savedir + idx + '.csv'
+        dfi = pd.read_csv(fname)
+        if i ==1:
+            rgba = np.array(plt.cm.tab20(i))
+        else:
+            rgba = np.array([1,1,1,1])*0.5
+
+        newlines = dfi2newlines(dfi, rgba, idx)
+        for (i, newline) in enumerate(newlines):
+            html.insert(l + i + 1, newline)
+        l += len(newlines)
+    html.insert(l + 1, '      ]\n')
+
+    savename = 'index.html'
+    with open(savename, 'w') as f:
+        f.writelines(html)
+
+    savename = savedir + '/scatter.html'
+    with open(savename, 'w') as f:
+        f.writelines(html)
+
+
 def generate_scatter(prefs_count, savedir):
     template = './scatter_template.html'
     with open(template) as f:
@@ -131,6 +167,7 @@ def generate_scatter(prefs_count, savedir):
     savename = savedir + '/scatter.html'
     with open(savename, 'w') as f:
         f.writelines(html)
+
 
 def generate_scatter_day(prefs_count, savedir, thresh = 10):
     template = './scatter_day_template.html'
@@ -170,7 +207,7 @@ if __name__ == '__main__':
     df, savedir = load_data()
     if not os.path.exists(savedir):
         create_csv(df, savedir)
-    create_csv(df, savedir)
+    # create_csv(df, savedir)
 
     prefs_count = df['居住都道府県'].value_counts()
     prefs_count = prefs_count.drop('不明')
