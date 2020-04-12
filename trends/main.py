@@ -117,7 +117,7 @@ def generate_scatter(prefs_count, savedir):
     for (i, idx) in enumerate(prefs_count.index):
         fname = savedir + idx + '.csv'
         dfi = pd.read_csv(fname)
-        rgba = np.array(plt.cm.jet(i))
+        rgba = np.array(plt.cm.tab20(i))
         newlines = dfi2newlines(dfi, rgba, idx)
         for (i, newline) in enumerate(newlines):
             html.insert(l + i + 1, newline)
@@ -149,7 +149,7 @@ def generate_scatter_day(prefs_count, savedir, thresh = 10):
         fname = savedir + idx + '.csv'
         dfi = pd.read_csv(fname)
         dfi = dfi[dfi['cumsum'] > thresh]
-        rgba = np.array(plt.cm.jet(i))
+        rgba = np.array(plt.cm.tab20(i))
         newlines = dfi2newlines(dfi, rgba, idx, 'day')
         for (i, newline) in enumerate(newlines):
             html.insert(l + i + 1, newline)
