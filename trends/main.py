@@ -119,9 +119,11 @@ if __name__ == '__main__':
     prefs_count = prefs_count[prefs_count > 100]
     # prefs_count = prefs_count[['東京都', '大阪府', '京都府']]
 
-    t = np.arange(10)
+    T = 10
+    N0 = 1
+    t = np.arange(T)
     Td = 70/r*t
-    Nt = 
+    Nt = N0 * np.pow(2, t/Td)
 
 
     generate_scatter(prefs_count, savedir)
