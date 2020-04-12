@@ -1,4 +1,3 @@
-
 import os
 import re
 import glob
@@ -8,7 +7,9 @@ from pathlib import Path
 from datetime import datetime
 from matplotlib import pylab as plt
 from matplotlib import rcParams
+
 rcParams['font.family'] = 'Hiragino Sans'
+
 
 def get_jag():
     timenow = datetime.today().strftime('%Y-%m-%d')
@@ -16,6 +17,7 @@ def get_jag():
     if not os.path.exists(fname):
         df = pd.read_csv('https://dl.dropboxusercontent.com/s/6mztoeb6xf78g5w/COVID-19.csv')
         df.to_csv(fname)
+
 
 def load_data():
     files = glob.glob('./csv/*.csv')
@@ -28,6 +30,7 @@ def load_data():
 
     df = pd.read_csv(file)
     return df, savedir
+
 
 def _create_csv(pdf, idx, savedir):
     pdf = pd.to_datetime(pdf['確定日YYYYMMDD'])
@@ -43,15 +46,16 @@ def _create_csv(pdf, idx, savedir):
 
     pdf.to_csv(savedir + idx + '.csv')  # , header=False)
 
-    plt.close()
-    pdf.plot(x='log10_cumsum', y='log10_rolling', grid=True)
-    plt.title(idx)
-    plt.xlabel('総症例数 (対数)')
-    plt.ylabel('前週の新規症例数 (対数)')
+    # plt.close()
+    # pdf.plot(x='log10_cumsum', y='log10_rolling', grid=True)
+    # plt.title(idx)
+    # plt.xlabel('総症例数 (対数)')
+    # plt.ylabel('前週の新規症例数 (対数)')
     # plt.show()
-    plt.savefig(savedir + idx + '.png')
+    # plt.savefig(savedir + idx + '.png')
 
-def create_csv(df,savedir):
+
+def create_csv(df, savedir):
     prefs_count = df['居住都道府県'].value_counts()
     for idx in prefs_count.index:
         pdf = df[df['居住都道府県'] == idx]
@@ -73,7 +77,8 @@ def check_signate():
     cpref = df.pref.value_counts()
     print(cpref)
 
-def dfi2newlines(dfi, rgba, idx, type = 'trend'):
+
+def dfi2newlines(dfi, rgba, idx, type='trend'):
     rgba[3] = rgba[3] * 0.2
     rgba2 = rgba.copy()
     rgba2[3] = rgba2[3] * 0.1
@@ -100,45 +105,6 @@ def dfi2newlines(dfi, rgba, idx, type = 'trend'):
     newlines.append('            showLine: true, \n')
     newlines.append('        },\n')
     return newlines
-
-def generate_pref_scatter(prefs_count, savedir, prefid):
-    template = './scatter_template.html'
-    with open(template) as f:
-        html = f.readlines()
-
-    # insert days
-    l = [i for i, line in enumerate(html) if '新型コロナウイルス(COVID-19)の感染者数' in line][0]
-    today = savedir.split('-')
-    today = today[2] + '年' + today[3] + '月' + today[4][:-1] + '日'
-    html[l] = html[l][:-6] + today + html[l][-6:]
-
-    # insert data
-    prefs = list(prefs_count.index)
-    pref = prefs.pop(prefid)
-    prefs.insert(0, pref)
-
-    l = [i for i, line in enumerate(html) if 'datasets' in line][0]
-    for (i, idx) in enumerate(prefs):
-        fname = savedir + idx + '.csv'
-        dfi = pd.read_csv(fname)
-        if i == 0:
-            rgba = np.array(plt.cm.tab20(0))
-        else:
-            rgba = np.array([1,1,1,1])*0.8
-
-        newlines = dfi2newlines(dfi, rgba, idx)
-        for (i, newline) in enumerate(newlines):
-            html.insert(l + i + 1, newline)
-        l += len(newlines)
-    html.insert(l + 1, '      ]\n')
-
-    savename = 'scatter_' + + '.html'
-    with open(savename, 'w') as f:
-        f.writelines(html)
-
-    savename = savedir + '/scatter_pref.html'
-    with open(savename, 'w') as f:
-        f.writelines(html)
 
 
 def generate_scatter(prefs_count, savedir):
@@ -173,7 +139,7 @@ def generate_scatter(prefs_count, savedir):
         f.writelines(html)
 
 
-def generate_scatter_day(prefs_count, savedir, thresh = 10):
+def generate_scatter_day(prefs_count, savedir, thresh=10):
     template = './scatter_day_template.html'
     with open(template) as f:
         html = f.readlines()
@@ -206,6 +172,88 @@ def generate_scatter_day(prefs_count, savedir, thresh = 10):
     with open(savename, 'w') as f:
         f.writelines(html)
 
+
+def generate_scatter_pref(prefs_count, savedir, prefid):
+    template = './scatter_template.html'
+    with open(template) as f:
+        html = f.readlines()
+
+    # insert days
+    l = [i for i, line in enumerate(html) if '新型コロナウイルス(COVID-19)の感染者数' in line][0]
+    today = savedir.split('-')
+    today = today[2] + '年' + today[3] + '月' + today[4][:-1] + '日'
+    html[l] = html[l][:-6] + today + html[l][-6:]
+
+    # insert data
+    prefs = list(prefs_count.index)
+    pref = prefs.pop(prefid)
+    prefs.insert(0, pref)
+
+    l = [i for i, line in enumerate(html) if 'datasets' in line][0]
+    for (i, idx) in enumerate(prefs):
+        fname = savedir + idx + '.csv'
+        dfi = pd.read_csv(fname)
+        if i == 0:
+            rgba = np.array(plt.cm.tab20(0))
+        else:
+            rgba = np.array([1, 1, 1, 1]) * 0.9
+
+        newlines = dfi2newlines(dfi, rgba, idx)
+        for (i, newline) in enumerate(newlines):
+            html.insert(l + i + 1, newline)
+        l += len(newlines)
+    html.insert(l + 1, '      ]\n')
+
+    savename = './pref/scatter_' + pref + '.html'
+    with open(savename, 'w') as f:
+        f.writelines(html)
+
+    savename = savedir + '/scatter_' + pref + '.html'
+    with open(savename, 'w') as f:
+        f.writelines(html)
+
+
+def generate_scatter_day_pref(prefs_count, savedir, prefid, thresh=10):
+    template = './scatter_day_template.html'
+    with open(template) as f:
+        html = f.readlines()
+
+    # insert days
+    l = [i for i, line in enumerate(html) if '新型コロナウイルス(COVID-19)の感染者数' in line][0]
+    today = savedir.split('-')
+    today = today[2] + '年' + today[3] + '月' + today[4][:-1] + '日'
+    html[l] = html[l][:-6] + today + html[l][-6:]
+
+    # insert data
+    prefs = list(prefs_count.index)
+    pref = prefs.pop(prefid)
+    prefs.insert(0, pref)
+
+    l = [i for i, line in enumerate(html) if 'datasets' in line][0]
+    for (i, idx) in enumerate(prefs_count.index):
+        fname = savedir + idx + '.csv'
+        dfi = pd.read_csv(fname)
+        dfi = dfi[dfi['cumsum'] > thresh]
+        if i == 0:
+            rgba = np.array(plt.cm.tab20(0))
+        else:
+            rgba = np.array([1, 1, 1, 1]) * 0.9
+        newlines = dfi2newlines(dfi, rgba, idx, 'day')
+        for (i, newline) in enumerate(newlines):
+            html.insert(l + i + 1, newline)
+        l += len(newlines)
+
+    html.insert(l + 1, '      ]\n')
+
+    savename = './pref/scatter_day_' + pref + '.html'
+    with open(savename, 'w') as f:
+        f.writelines(html)
+
+    savename = savedir + '/scatter_day_' + pref + '.html'
+    with open(savename, 'w') as f:
+        f.writelines(html)
+
+
 if __name__ == '__main__':
     get_jag()
     df, savedir = load_data()
@@ -218,8 +266,11 @@ if __name__ == '__main__':
     prefs_count = prefs_count[prefs_count > 100]
     # prefs_count = prefs_count[['東京都', '大阪府', '京都府']]
 
-    generate_pref_scatter(prefs_count, savedir)
-
     generate_scatter(prefs_count, savedir)
     generate_scatter_day(prefs_count, savedir, 10)
+
+    for i in range(len(prefs_count)):
+        generate_scatter_pref(prefs_count, savedir, i)
+        generate_scatter_day_pref(prefs_count, savedir, i)
+
     print(0)
