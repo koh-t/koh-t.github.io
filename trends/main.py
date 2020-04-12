@@ -119,7 +119,7 @@ if __name__ == '__main__':
     prefs_count = prefs_count[prefs_count > 100]
     # prefs_count = prefs_count[['東京都', '大阪府', '京都府']]
 
-    T = 10
+    T = 100
     N0 = 1
     t = np.arange(1, T)
     Td = 70/r*t
