@@ -230,7 +230,7 @@ def generate_scatter_day_pref(prefs_count, savedir, prefid, thresh=10):
     prefs.insert(0, pref)
 
     l = [i for i, line in enumerate(html) if 'datasets' in line][0]
-    for (i, idx) in enumerate(prefs_count.index):
+    for (i, idx) in enumerate(prefs):
         fname = savedir + idx + '.csv'
         dfi = pd.read_csv(fname)
         dfi = dfi[dfi['cumsum'] > thresh]
