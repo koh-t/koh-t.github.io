@@ -10,35 +10,7 @@ from matplotlib import rcParams
 
 rcParams['font.family'] = 'Hiragino Sans'
 from plot import generate_scatter_pref, generate_scatter_day_pref
-from utils import get_jag, load_data, create_csv
-
-def dfi2newlines(dfi, rgba, idx, type='trend'):
-    rgba[3] = rgba[3] * 0.2
-    rgba2 = rgba.copy()
-    rgba2[3] = rgba2[3] * 0.1
-    rgba = tuple((rgba * 256).astype(int).tolist())
-    rgba2 = tuple((rgba2 * 256).astype(int).tolist())
-
-    data = ''
-    for (j, (index, row)) in enumerate(dfi.iterrows()):
-        if type == 'trend':
-            x = np.round(row.log10_cumsum, 3)
-        elif type == 'day':
-            x = j
-        y = np.round(row.log10_rolling, 3)
-        data = data + '{x:' + str(x) + ', y:' + str(y) + '}, '
-    data = data[:-2]
-
-    newlines = []
-    newlines.append('        {\n')
-    newlines.append('            label: \'' + idx + '\' ,\n')
-    newlines.append('            borderColor: \'RGBA' + str(rgba) + '\', \n')
-    newlines.append('            backgroundColor: \'RGBA' + str(rgba2) + '\', \n')
-    newlines.append('            data: [' + data + '],\n')
-    newlines.append('            fill: false, \n')
-    newlines.append('            showLine: true, \n')
-    newlines.append('        },\n')
-    return newlines
+from utils import get_jag, load_data, create_csv, dfi2newlines
 
 
 def generate_scatter(prefs_count, savedir):

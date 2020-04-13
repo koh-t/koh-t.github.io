@@ -6,6 +6,7 @@ import pandas as pd
 from pathlib import Path
 from datetime import datetime
 from matplotlib import pylab as plt
+from utils import dfi2newlines
 
 def generate_scatter_pref(prefs_count, savedir, prefid):
     template = './scatter_template.html'
