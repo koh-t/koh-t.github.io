@@ -10,7 +10,7 @@ from matplotlib import rcParams
 
 rcParams['font.family'] = 'Hiragino Sans'
 from plot import generate_scatter_pref, generate_scatter_day_pref
-from utils import get_jag, load_data, _create_csv
+from utils import get_jag, load_data, create_csv
 
 def dfi2newlines(dfi, rgba, idx, type='trend'):
     rgba[3] = rgba[3] * 0.2
