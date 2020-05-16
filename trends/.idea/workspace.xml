@@ -138,9 +138,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="224" y="100" key="SettingsEditor/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350459623" />
-    <state x="776" y="813" key="com.intellij.ide.util.TipDialog" timestamp="1588819557201">
-      <screen x="0" y="23" width="3360" height="1867" />
+    <state x="-3" y="-817" key="com.intellij.ide.util.TipDialog" timestamp="1589611780302">
+      <screen x="-594" y="-1417" width="2560" height="1417" />
     </state>
+    <state x="-3" y="-817" key="com.intellij.ide.util.TipDialog/0.23.1440.877/-594.-1417.2560.1417@-594.-1417.2560.1417" timestamp="1589611780302" />
     <state x="776" y="813" key="com.intellij.ide.util.TipDialog/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1588819557201" />
     <state x="776" y="813" key="com.intellij.ide.util.TipDialog/0.23.3360.1867/-1440.-647.1440.2537@0.23.3360.1867" timestamp="1586500210485" />
   </component>
