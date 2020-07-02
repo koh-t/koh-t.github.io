@@ -24,6 +24,22 @@ def generate_scatter(prefs_count, savedir):
     today = today[2] + '年' + today[3] + '月' + today[4][:-1] + '日'
     html[l] = html[l][:-6] + today + html[l][-6:]
 
+    # insert pref
+    l = [i for i, line in enumerate(html) if 'scatter_++.html' in line][0]
+    template = html[l].split('++')
+    html.pop(l)
+    for (i, pref) in enumerate(prefs_count.index):
+        newline = template[0] + pref + template[1] + pref + template[2]
+        html.insert(l + i, newline)
+
+    # insert pref day
+    l = [i for i, line in enumerate(html) if 'scatter_day_++.html' in line][0]
+    template = html[l].split('++')
+    html.pop(l)
+    for (i, pref) in enumerate(prefs_count.index):
+        newline = template[0] + pref + template[1] + pref + template[2]
+        html.insert(l + i, newline)
+
     # insert data
     l = [i for i, line in enumerate(html) if 'datasets' in line][0]
     for (i, idx) in enumerate(prefs_count.index):
@@ -56,6 +72,22 @@ def generate_scatter_day(prefs_count, savedir, thresh=10):
     today = savedir.split('-')
     today = today[2] + '年' + today[3] + '月' + today[4][:-1] + '日'
     html[l] = html[l][:-6] + today + html[l][-6:]
+
+    # insert pref
+    l = [i for i, line in enumerate(html) if 'scatter_++.html' in line][0]
+    template = html[l].split('++')
+    html.pop(l)
+    for (i, pref) in enumerate(prefs_count.index):
+        newline = template[0] + pref + template[1] + pref + template[2]
+        html.insert(l + i, newline)
+
+    # insert pref day
+    l = [i for i, line in enumerate(html) if 'scatter_day_++.html' in line][0]
+    template = html[l].split('++')
+    html.pop(l)
+    for (i, pref) in enumerate(prefs_count.index):
+        newline = template[0] + pref + template[1] + pref + template[2]
+        html.insert(l + i, newline)
 
     # insert data
     l = [i for i, line in enumerate(html) if 'datasets' in line][0]
