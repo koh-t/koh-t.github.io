@@ -32,7 +32,7 @@ def generate_scatter(prefs_count, savedir):
         if i < len(prefs_count) - 1:
             newline = template[0] + pref + template[1] + pref + template[2]
         else:
-            newline = template[0] + pref + template[1] + pref + template[2][:-1] + '\n'
+            newline = template[0] + pref + template[1] + pref + template[2][:-2] + '\n'
         html.insert(l + i, newline)
 
     # insert pref day
@@ -43,7 +43,7 @@ def generate_scatter(prefs_count, savedir):
         if i < len(prefs_count) - 1:
             newline = template[0] + pref + template[1] + pref + template[2]
         else:
-            newline = template[0] + pref + template[1] + pref + template[2][:-1] + '\n'
+            newline = template[0] + pref + template[1] + pref + template[2][:-2] + '\n'
         html.insert(l + i, newline)
 
     # insert data
@@ -87,7 +87,7 @@ def generate_scatter_day(prefs_count, savedir, thresh=10):
         if i < len(prefs_count) - 1:
             newline = template[0] + pref + template[1] + pref + template[2]
         else:
-            newline = template[0] + pref + template[1] + pref + template[2][:-1] + '\n'
+            newline = template[0] + pref + template[1] + pref + template[2][:-2] + '\n'
         html.insert(l + i, newline)
 
     # insert pref day
@@ -98,7 +98,7 @@ def generate_scatter_day(prefs_count, savedir, thresh=10):
         if i < len(prefs_count) - 1:
             newline = template[0] + pref + template[1] + pref + template[2]
         else:
-            newline = template[0] + pref + template[1] + pref + template[2][:-1] + '\n'
+            newline = template[0] + pref + template[1] + pref + template[2][:-2] + '\n'
         html.insert(l + i, newline)
 
     # insert data
