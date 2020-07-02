@@ -19,6 +19,28 @@ def generate_scatter_pref(prefs_count, savedir, prefid):
     today = today[2] + '年' + today[3] + '月' + today[4][:-1] + '日'
     html[l] = html[l][:-6] + today + html[l][-6:]
 
+    # insert pref
+    l = [i for i, line in enumerate(html) if 'scatter_++.html' in line][0]
+    template = html[l].split('++')
+    html.pop(l)
+    for (i, pref) in enumerate(prefs_count.index):
+        if i < len(prefs_count) - 1:
+            newline = template[0] + pref + template[1] + pref + template[2]
+        else:
+            newline = template[0] + pref + template[1] + pref + template[2][:-2] + '\n'
+        html.insert(l + i, newline)
+
+    # insert pref day
+    l = [i for i, line in enumerate(html) if 'scatter_day_++.html' in line][0]
+    template = html[l].split('++')
+    html.pop(l)
+    for (i, pref) in enumerate(prefs_count.index):
+        if i < len(prefs_count) - 1:
+            newline = template[0] + pref + template[1] + pref + template[2]
+        else:
+            newline = template[0] + pref + template[1] + pref + template[2][:-2] + '\n'
+        html.insert(l + i, newline)
+
     # insert data
     prefs = list(prefs_count.index)
     pref = prefs.pop(prefid)
@@ -58,6 +80,28 @@ def generate_scatter_day_pref(prefs_count, savedir, prefid, thresh=10):
     today = savedir.split('-')
     today = today[2] + '年' + today[3] + '月' + today[4][:-1] + '日'
     html[l] = html[l][:-6] + today + html[l][-6:]
+
+    # insert pref
+    l = [i for i, line in enumerate(html) if 'scatter_++.html' in line][0]
+    template = html[l].split('++')
+    html.pop(l)
+    for (i, pref) in enumerate(prefs_count.index):
+        if i < len(prefs_count) - 1:
+            newline = template[0] + pref + template[1] + pref + template[2]
+        else:
+            newline = template[0] + pref + template[1] + pref + template[2][:-2] + '\n'
+        html.insert(l + i, newline)
+
+    # insert pref day
+    l = [i for i, line in enumerate(html) if 'scatter_day_++.html' in line][0]
+    template = html[l].split('++')
+    html.pop(l)
+    for (i, pref) in enumerate(prefs_count.index):
+        if i < len(prefs_count) - 1:
+            newline = template[0] + pref + template[1] + pref + template[2]
+        else:
+            newline = template[0] + pref + template[1] + pref + template[2][:-2] + '\n'
+        html.insert(l + i, newline)
 
     # insert data
     prefs = list(prefs_count.index)
