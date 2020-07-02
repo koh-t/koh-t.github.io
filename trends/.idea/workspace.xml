@@ -3,8 +3,90 @@
   <component name="ChangeListManager">
     <list default="true" id="c5aa05f3-0e80-4454-bc94-cacf1641ac0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_京都府.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_京都府.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_兵庫県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_兵庫県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_北海道.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_北海道.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_千葉県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_千葉県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_埼玉県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_埼玉県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_大阪府.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_大阪府.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_富山県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_富山県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_岐阜県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_岐阜県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_広島県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_広島県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_愛知県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_愛知県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_東京都.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_東京都.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_沖縄県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_沖縄県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_滋賀県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_滋賀県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_石川県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_石川県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_神奈川県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_神奈川県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_福井県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_福井県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_福岡県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_福岡県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_群馬県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_群馬県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_茨城県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_茨城県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_長崎県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_day_長崎県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_京都府.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_京都府.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_兵庫県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_兵庫県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_北海道.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_北海道.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_千葉県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_千葉県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_埼玉県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_埼玉県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_大阪府.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_大阪府.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_富山県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_富山県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_岐阜県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_岐阜県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_広島県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_広島県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_愛知県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_愛知県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_東京都.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_東京都.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_沖縄県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_沖縄県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_滋賀県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_滋賀県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_石川県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_石川県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_神奈川県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_神奈川県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_福井県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_福井県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_福岡県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_福岡県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_群馬県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_群馬県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_茨城県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_茨城県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_長崎県.html" beforeDir="false" afterPath="$PROJECT_DIR$/csv/COVID-19-2020-07-02/scatter_長崎県.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scatter_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/scatter_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_京都府.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_京都府.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_兵庫県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_兵庫県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_北海道.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_北海道.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_千葉県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_千葉県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_埼玉県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_埼玉県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_大阪府.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_大阪府.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_富山県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_富山県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_岐阜県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_岐阜県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_広島県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_広島県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_愛知県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_愛知県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_東京都.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_東京都.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_沖縄県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_沖縄県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_滋賀県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_滋賀県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_石川県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_石川県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_神奈川県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_神奈川県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_福井県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_福井県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_福岡県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_福岡県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_群馬県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_群馬県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_茨城県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_茨城県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_day_長崎県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_day_長崎県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_京都府.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_京都府.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_兵庫県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_兵庫県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_北海道.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_北海道.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_千葉県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_千葉県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_埼玉県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_埼玉県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_大阪府.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_大阪府.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_富山県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_富山県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_岐阜県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_岐阜県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_広島県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_広島県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_愛知県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_愛知県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_東京都.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_東京都.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_沖縄県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_沖縄県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_滋賀県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_滋賀県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_石川県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_石川県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_神奈川県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_神奈川県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_福井県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_福井県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_福岡県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_福岡県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_群馬県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_群馬県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_茨城県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_茨城県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pref/scatter_長崎県.html" beforeDir="false" afterPath="$PROJECT_DIR$/pref/scatter_長崎県.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scatter_day.html" beforeDir="false" afterPath="$PROJECT_DIR$/scatter_day.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scatter_day_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/scatter_day_template.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +158,7 @@
       <workItem from="1588819531967" duration="1000" />
       <workItem from="1588819553101" duration="301000" />
       <workItem from="1589611773703" duration="291000" />
-      <workItem from="1593665847958" duration="833000" />
+      <workItem from="1593665847958" duration="1182000" />
     </task>
     <servers />
   </component>
@@ -93,61 +175,61 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="510" y="223" key="FileChooserDialogImpl/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586350372440" />
-    <state width="1786" height="572" key="GridCell.Tab.0.bottom" timestamp="1593666715351">
+    <state width="1786" height="572" key="GridCell.Tab.0.bottom" timestamp="1593667178082">
       <screen x="0" y="23" width="3360" height="1867" />
     </state>
     <state width="1519" height="325" key="GridCell.Tab.0.bottom/0.23.1440.877/-594.-1417.2560.1417@-594.-1417.2560.1417" timestamp="1586388462230" />
     <state width="1356" height="325" key="GridCell.Tab.0.bottom/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586387048520" />
-    <state width="1786" height="572" key="GridCell.Tab.0.bottom/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593666715351" />
+    <state width="1786" height="572" key="GridCell.Tab.0.bottom/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593667178082" />
     <state width="1800" height="572" key="GridCell.Tab.0.bottom/0.23.3360.1867/-1440.-647.1440.2537@0.23.3360.1867" timestamp="1586483904278" />
-    <state width="1786" height="572" key="GridCell.Tab.0.center" timestamp="1593666715348">
+    <state width="1786" height="572" key="GridCell.Tab.0.center" timestamp="1593667178080">
       <screen x="0" y="23" width="3360" height="1867" />
     </state>
     <state width="1519" height="325" key="GridCell.Tab.0.center/0.23.1440.877/-594.-1417.2560.1417@-594.-1417.2560.1417" timestamp="1586388462230" />
     <state width="1356" height="325" key="GridCell.Tab.0.center/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586387048519" />
-    <state width="1786" height="572" key="GridCell.Tab.0.center/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593666715348" />
+    <state width="1786" height="572" key="GridCell.Tab.0.center/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593667178080" />
     <state width="1800" height="572" key="GridCell.Tab.0.center/0.23.3360.1867/-1440.-647.1440.2537@0.23.3360.1867" timestamp="1586483904277" />
-    <state width="1786" height="572" key="GridCell.Tab.0.left" timestamp="1593666715346">
+    <state width="1786" height="572" key="GridCell.Tab.0.left" timestamp="1593667178079">
       <screen x="0" y="23" width="3360" height="1867" />
     </state>
     <state width="1519" height="325" key="GridCell.Tab.0.left/0.23.1440.877/-594.-1417.2560.1417@-594.-1417.2560.1417" timestamp="1586388462229" />
     <state width="1356" height="325" key="GridCell.Tab.0.left/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586387048519" />
-    <state width="1786" height="572" key="GridCell.Tab.0.left/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593666715346" />
+    <state width="1786" height="572" key="GridCell.Tab.0.left/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593667178078" />
     <state width="1800" height="572" key="GridCell.Tab.0.left/0.23.3360.1867/-1440.-647.1440.2537@0.23.3360.1867" timestamp="1586483904277" />
-    <state width="1786" height="572" key="GridCell.Tab.0.right" timestamp="1593666715350">
+    <state width="1786" height="572" key="GridCell.Tab.0.right" timestamp="1593667178081">
       <screen x="0" y="23" width="3360" height="1867" />
     </state>
     <state width="1519" height="325" key="GridCell.Tab.0.right/0.23.1440.877/-594.-1417.2560.1417@-594.-1417.2560.1417" timestamp="1586388462230" />
     <state width="1356" height="325" key="GridCell.Tab.0.right/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586387048519" />
-    <state width="1786" height="572" key="GridCell.Tab.0.right/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593666715350" />
+    <state width="1786" height="572" key="GridCell.Tab.0.right/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593667178081" />
     <state width="1800" height="572" key="GridCell.Tab.0.right/0.23.3360.1867/-1440.-647.1440.2537@0.23.3360.1867" timestamp="1586483904278" />
-    <state width="1786" height="572" key="GridCell.Tab.1.bottom" timestamp="1593666718505">
+    <state width="1786" height="572" key="GridCell.Tab.1.bottom" timestamp="1593667181318">
       <screen x="0" y="23" width="3360" height="1867" />
     </state>
     <state width="1519" height="325" key="GridCell.Tab.1.bottom/0.23.1440.877/-594.-1417.2560.1417@-594.-1417.2560.1417" timestamp="1586388462192" />
     <state width="1356" height="325" key="GridCell.Tab.1.bottom/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586387043306" />
-    <state width="1786" height="572" key="GridCell.Tab.1.bottom/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593666718505" />
+    <state width="1786" height="572" key="GridCell.Tab.1.bottom/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593667181318" />
     <state width="1800" height="572" key="GridCell.Tab.1.bottom/0.23.3360.1867/-1440.-647.1440.2537@0.23.3360.1867" timestamp="1586483904279" />
-    <state width="1786" height="572" key="GridCell.Tab.1.center" timestamp="1593666718504">
+    <state width="1786" height="572" key="GridCell.Tab.1.center" timestamp="1593667181317">
       <screen x="0" y="23" width="3360" height="1867" />
     </state>
     <state width="1519" height="325" key="GridCell.Tab.1.center/0.23.1440.877/-594.-1417.2560.1417@-594.-1417.2560.1417" timestamp="1586388462191" />
     <state width="1356" height="325" key="GridCell.Tab.1.center/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586387043305" />
-    <state width="1786" height="572" key="GridCell.Tab.1.center/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593666718504" />
+    <state width="1786" height="572" key="GridCell.Tab.1.center/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593667181317" />
     <state width="1800" height="572" key="GridCell.Tab.1.center/0.23.3360.1867/-1440.-647.1440.2537@0.23.3360.1867" timestamp="1586483904278" />
-    <state width="1786" height="572" key="GridCell.Tab.1.left" timestamp="1593666718504">
+    <state width="1786" height="572" key="GridCell.Tab.1.left" timestamp="1593667181317">
       <screen x="0" y="23" width="3360" height="1867" />
     </state>
     <state width="1519" height="325" key="GridCell.Tab.1.left/0.23.1440.877/-594.-1417.2560.1417@-594.-1417.2560.1417" timestamp="1586388462189" />
     <state width="1356" height="325" key="GridCell.Tab.1.left/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586387043304" />
-    <state width="1786" height="572" key="GridCell.Tab.1.left/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593666718504" />
+    <state width="1786" height="572" key="GridCell.Tab.1.left/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593667181317" />
     <state width="1800" height="572" key="GridCell.Tab.1.left/0.23.3360.1867/-1440.-647.1440.2537@0.23.3360.1867" timestamp="1586483904278" />
-    <state width="1786" height="572" key="GridCell.Tab.1.right" timestamp="1593666718505">
+    <state width="1786" height="572" key="GridCell.Tab.1.right" timestamp="1593667181318">
       <screen x="0" y="23" width="3360" height="1867" />
     </state>
     <state width="1519" height="325" key="GridCell.Tab.1.right/0.23.1440.877/-594.-1417.2560.1417@-594.-1417.2560.1417" timestamp="1586388462191" />
     <state width="1356" height="325" key="GridCell.Tab.1.right/0.23.1440.877/-594.-1417.2560.1417@0.23.1440.877" timestamp="1586387043305" />
-    <state width="1786" height="572" key="GridCell.Tab.1.right/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593666718505" />
+    <state width="1786" height="572" key="GridCell.Tab.1.right/0.23.3360.1867/-1440.-335.1440.2537@0.23.3360.1867" timestamp="1593667181318" />
     <state width="1800" height="572" key="GridCell.Tab.1.right/0.23.3360.1867/-1440.-647.1440.2537@0.23.3360.1867" timestamp="1586483904279" />
     <state x="523" y="187" key="SettingsEditor" timestamp="1593665952913">
       <screen x="0" y="23" width="3360" height="1867" />
@@ -167,18 +249,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -189,6 +259,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/trends$main.coverage" NAME="main Coverage Results" MODIFIED="1593666715171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/trends$main.coverage" NAME="main Coverage Results" MODIFIED="1593667177900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

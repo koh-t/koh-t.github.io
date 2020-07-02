@@ -29,7 +29,10 @@ def generate_scatter(prefs_count, savedir):
     template = html[l].split('++')
     html.pop(l)
     for (i, pref) in enumerate(prefs_count.index):
-        newline = template[0] + pref + template[1] + pref + template[2]
+        if i < len(prefs_count) - 1:
+            newline = template[0] + pref + template[1] + pref + template[2]
+        else:
+            newline = template[0] + pref + template[1] + pref + template[2][:-1] + '\n'
         html.insert(l + i, newline)
 
     # insert pref day
@@ -37,7 +40,10 @@ def generate_scatter(prefs_count, savedir):
     template = html[l].split('++')
     html.pop(l)
     for (i, pref) in enumerate(prefs_count.index):
-        newline = template[0] + pref + template[1] + pref + template[2]
+        if i < len(prefs_count) - 1:
+            newline = template[0] + pref + template[1] + pref + template[2]
+        else:
+            newline = template[0] + pref + template[1] + pref + template[2][:-1] + '\n'
         html.insert(l + i, newline)
 
     # insert data
@@ -78,7 +84,10 @@ def generate_scatter_day(prefs_count, savedir, thresh=10):
     template = html[l].split('++')
     html.pop(l)
     for (i, pref) in enumerate(prefs_count.index):
-        newline = template[0] + pref + template[1] + pref + template[2]
+        if i < len(prefs_count) - 1:
+            newline = template[0] + pref + template[1] + pref + template[2]
+        else:
+            newline = template[0] + pref + template[1] + pref + template[2][:-1] + '\n'
         html.insert(l + i, newline)
 
     # insert pref day
@@ -86,7 +95,10 @@ def generate_scatter_day(prefs_count, savedir, thresh=10):
     template = html[l].split('++')
     html.pop(l)
     for (i, pref) in enumerate(prefs_count.index):
-        newline = template[0] + pref + template[1] + pref + template[2]
+        if i < len(prefs_count) - 1:
+            newline = template[0] + pref + template[1] + pref + template[2]
+        else:
+            newline = template[0] + pref + template[1] + pref + template[2][:-1] + '\n'
         html.insert(l + i, newline)
 
     # insert data
