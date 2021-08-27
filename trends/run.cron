@@ -1,7 +1,0 @@
-#!/bin/bash
-cd /Users/koh/Dropbox/Proj-web/koh-t.github.io/trends
-/Users/koh/anaconda3/envs/pt_env/bin/python main.py
-HOME=/Users/koh git -C /Users/koh/Dropbox/Proj-web/koh-t.github.io/trends/add .
-HOME=/Users/koh git -C /Users/koh/Dropbox/Proj-web/koh-t.github.io/trends/ commit -m "web update"
-HOME=/Users/koh git -C /Users/koh/Dropbox/Proj-web/koh-t.github.io/trends/ push origin master
-exit 0
